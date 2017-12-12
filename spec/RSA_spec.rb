@@ -36,8 +36,8 @@ RSpec.describe RSA do
        end
        it "cheks if encrypt input equals to decrypt return" do
             msg = RSA.new key_values[0], key_values[1], key_values[2]
-            encrypted_msg = rsa_values.encrypt 'abcdef'
-            expect(rsa_values.decrypt encrypted_msg).to eq'abcdef'
+            encrypted_msg = msg.encrypt 'abcdef'
+            expect(msg.decrypt encrypted_msg).to eq'abcdef'
        end 
     end        
 end
