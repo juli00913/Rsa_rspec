@@ -56,8 +56,3 @@ class RSA
         decrypted_msg
     end 
 end
-
-#values = RSA.new_key
-#msg = RSA.new values[0], values[1], values[2]
-#encrypted = msg.encrypt "hello"
-#msg.decrypt encrypted 
